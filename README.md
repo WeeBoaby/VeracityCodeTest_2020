@@ -13,13 +13,15 @@ Created using Visual Studio Community (2019).
 | -throttle, throttle, -t		| Enables input throttling, will throttle to a max of 10 inputs per second  |
 ---
 
-Example with every flag enabled: `.\Veracity_AlexMalcolm.exe -i C:\Users\alexm\Documents\CodingTest2020InputStimulusPlusGui.csv -d -t -g -s`
+Example with every flag enabled: `.\Veracity_AlexMalcolm.exe -i .\CodingTest2020InputStimulusPlusGui.csv -d -t -g -s`
 
 ---
 * There will be timestamps alongside all consumption messages, making it easier to validate subtasks such as input prioritisation.
 * If enabled the GUI consumer is set up to consume *all* inputs, this could be extended through the GUI to only consume certain inputs based on a user selection
 * All requirements such as throttling are hardcoded (e.g 10 per second) however they are set up as constants for ease of change. This could also be extended into user input.
-* Depending on file permissions, you may see a FileNotFoundException if the *file consumer* is unable to create its output. 
+* Depending on file permissions, you may see a file error in the console if the *file consumer* is unable to create its output. 
+* Application only able to run on windows, built using my windows desktop.
+* I have used a mix of my code style that I am used to (more C++ oriented) and suggestions from VS for function name case etc. Changing in code styling is something I am used to and not adverse to having moved from C++ to Javascript/Typescript and back.
 
 ## Requirements:
 ### Create a simple program in the language of your choice that meets the following requirements:
