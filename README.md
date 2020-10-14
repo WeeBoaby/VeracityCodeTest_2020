@@ -8,9 +8,11 @@ Created using Visual Studio Community (2019).
 | [-help, help, -h]				| Shows executable help   |
 | [-debug, debug, -d]			| Enables verbose debug output (if any)  |
 | [-gui, gui, -g]				| Enables GUI consumer  |
-| [-input, input, -i]			| Provides executable with input file in a CSV form  |
+| [-input, input, -i]			| Provides executable with input file in a CSV form. Can be either absolute or relative  |
 | [-sort, sort, -s]				| Enables sorting inputs, will prioritise file consumption  |
 | [-throttle, throttle, -t]		| Enables input throttling, will throttle to a max of 10 inputs per second  |
+
+Example with every flag enabled: `.\Veracity_AlexMalcolm.exe -i C:\Users\alexm\Documents\CodingTest2020InputStimulusPlusGui.csv -d -t -g -s`
 
 ## Requirements:
 ### Create a simple program in the language of your choice that meets the following requirements:

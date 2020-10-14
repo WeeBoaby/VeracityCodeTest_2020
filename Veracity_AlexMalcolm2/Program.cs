@@ -116,7 +116,7 @@ namespace Veracity_AlexMalcolm
             ConsoleHelper.WriteLine(LogType.INFO, "[-help, help, -h] - shows this help.");
             ConsoleHelper.WriteLine(LogType.INFO, "[-debug, debug, -d] - enables verbose debug output during runtime");
             ConsoleHelper.WriteLine(LogType.INFO, "[-gui, gui, -g] - enables GUI consumer");
-            ConsoleHelper.WriteLine(LogType.INFO, "[-input, input, -i] {ABSOLUTE_FILE_PATH} - provides the application with the input file.");
+            ConsoleHelper.WriteLine(LogType.INFO, "[-input, input, -i] {ABSOLUTE_FILE_PATH} - provides the application with the input file. Can be absolute or relative path.");
             ConsoleHelper.WriteLine(LogType.INFO, "[-sort, sort, -s] - enables sorting inputs, prioritising \"File\".");
             ConsoleHelper.WriteLine(LogType.INFO, "[-throttle, throttle, -t] - enables throttling consumption, 10 max per second.");
             ConsoleHelper.WriteLine(LogType.PLAIN);
