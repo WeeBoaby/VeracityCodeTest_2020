@@ -5,14 +5,21 @@ Created using Visual Studio Community (2019).
 
 | Command						| Description   |
 |---							|---|
-| [-help, help, -h]				| Shows executable help   |
-| [-debug, debug, -d]			| Enables verbose debug output (if any)  |
-| [-gui, gui, -g]				| Enables GUI consumer  |
-| [-input, input, -i]			| Provides executable with input file in a CSV form. Can be either absolute or relative  |
-| [-sort, sort, -s]				| Enables sorting inputs, will prioritise file consumption  |
-| [-throttle, throttle, -t]		| Enables input throttling, will throttle to a max of 10 inputs per second  |
+| -help, help, -h				| Shows executable help   |
+| -debug, debug, -d			| Enables verbose debug output (if any)  |
+| -gui, gui, -g				| Enables GUI consumer  |
+| -input, input, -i			| Provides executable with input file in a CSV form. Can be either absolute or relative  |
+| -sort, sort, -s				| Enables sorting inputs, will prioritise file consumption  |
+| -throttle, throttle, -t		| Enables input throttling, will throttle to a max of 10 inputs per second  |
+---
 
 Example with every flag enabled: `.\Veracity_AlexMalcolm.exe -i C:\Users\alexm\Documents\CodingTest2020InputStimulusPlusGui.csv -d -t -g -s`
+
+---
+* There will be timestamps alongside all consumption messages, making it easier to validate subtasks such as input prioritisation.
+* If enabled the GUI consumer is set up to consume *all* inputs, this could be extended through the GUI to only consume certain inputs based on a user selection
+* All requirements such as throttling are hardcoded (e.g 10 per second) however they are set up as constants for ease of change. This could also be extended into user input.
+* Depending on file permissions, you may see a FileNotFoundException if the *file consumer* is unable to create its output. 
 
 ## Requirements:
 ### Create a simple program in the language of your choice that meets the following requirements:
