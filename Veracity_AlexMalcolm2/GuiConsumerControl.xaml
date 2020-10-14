@@ -1,0 +1,12 @@
+﻿<UserControl x:Class="Veracity_AlexMalcolm.GuiConsumerControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Veracity_AlexMalcolm"
+             mc:Ignorable="d" Width="450" Height="546.333">
+    <Grid HorizontalAlignment="Left" Height="546" VerticalAlignment="Top" Width="450">
+        <Button x:Name="dismissButton" Content="Dismiss" HorizontalAlignment="Left" Margin="365,516,0,0" VerticalAlignment="Top" Width="75" Click="DismissClicked"/>
+        <ListBox x:Name="contentList" HorizontalAlignment="Left" Height="501" Margin="10,10,0,0" VerticalAlignment="Top" Width="430"/>
+    </Grid>
+</UserControl>
