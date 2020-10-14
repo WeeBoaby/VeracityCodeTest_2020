@@ -16,6 +16,7 @@ Created using Visual Studio Community (2019).
 Example with every flag enabled: `.\Veracity_AlexMalcolm.exe -i .\CodingTest2020InputStimulusPlusGui.csv -d -t -g -s`
 
 ---
+* Compiled app can be found in the `Release.zip` file in the root directory of the repo in case of any compilation or environment issues.
 * There will be timestamps alongside all consumption messages, making it easier to validate subtasks such as input prioritisation.
 * If enabled the GUI consumer is set up to consume *all* inputs, this could be extended through the GUI to only consume certain inputs based on a user selection
 * All requirements such as throttling are hardcoded (e.g 10 per second) however they are set up as constants for ease of change. This could also be extended into user input.
