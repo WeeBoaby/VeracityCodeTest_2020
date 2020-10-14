@@ -33,10 +33,8 @@ namespace Veracity_AlexMalcolm
         // Private functions
         private bool InitialiseFile()
         {
-            if (!Path.IsPathRooted(m_workingDirectory))
-            {
+            if (!Directory.Exists(m_workingDirectory))
                 return false;
-            }
 
             if (m_outputFile == null)
             {

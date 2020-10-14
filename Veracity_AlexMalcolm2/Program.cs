@@ -80,6 +80,12 @@ namespace Veracity_AlexMalcolm
                 return 1;
             }
 
+            if (!File.Exists(inputFile))
+            {
+                ConsoleHelper.WriteLine(LogType.ERROR, "Input file did not exist or could not be accessed. Check it exists and you have the appropriate permissions.");
+                return 1;
+            }
+
             string[] lines = File.ReadAllLines(inputFile);
             string workingDir = Path.GetDirectoryName(inputFile);
 

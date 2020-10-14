@@ -81,10 +81,8 @@ namespace Veracity_AlexMalcolm
 
             m_consumers.Add(new ConsumerConsole());
 
-            if (Path.IsPathRooted(m_workingDirectory))
-            {
+            if (Directory.Exists(m_workingDirectory))
                 m_consumers.Add(new ConsumerFile(m_workingDirectory));
-            }
             else
                 ConsoleHelper.WriteLine(LogType.ERROR, "Working directory not valid, no File consumer created");
 
