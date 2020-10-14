@@ -38,3 +38,10 @@ Example with every flag enabled: `.\Veracity_AlexMalcolm.exe -i .\CodingTest2020
 - [x] Producer should be limited, to at most, 10 objects per second
 - [x] The file consumer should always take priority in the queue and have its objects processed first
 - [x] Add unit testing support to a single part of the proposed application i.e. tests for a single consumer or producer.
+
+## Images:
+
+![Starting](./images/starting_app.png)
+![Running](./images/running_app.png)
+![GUI](./images/gui_consumer.png)
+![Complete](./images/completed_app.png)
